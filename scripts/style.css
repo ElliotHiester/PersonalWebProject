@@ -21,7 +21,7 @@ body {
 
 .nav-text {
     color: #848484;
-    font: normal 100 0px "Verdana", sans-serif;
+    font: normal 100 0px "Roboto", sans-serif;
     text-align: center;
     bottom: 0;
     position: relative;
@@ -45,7 +45,7 @@ body {
     height: 4px;
     width: 4px;
     position:absolute;
-    top: 94%;
+    top: 96%;
     transform-origin:center center;
     left: 50%;
     right: 50%;
