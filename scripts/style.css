@@ -1,0 +1,39 @@
+body {
+    background-color: #263a4d;
+}
+
+.nav-bar{
+    display: flex;
+    height: 8vh;
+    flex-direction: row;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.nav-item{
+    width: 100%;
+    background-color: #ecf0f1;
+    margin: 0px;
+    text-align: center;
+}
+
+.nav-text {
+    color: #848484;
+    font: normal 100 18px "Verdana", sans-serif;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+    transform-origin: center center;
+    top: 25%;
+    bottom: 75%;
+}
+
+#nav-start {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+#nav-end {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
