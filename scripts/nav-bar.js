@@ -5,7 +5,7 @@ $(".nav-text").css("font-size", "" + window.innerHeight/38 + "px");
 
 //initial bar height and width
 $(".select-bar").css("height", "" + window.innerHeight/258.5 + "px");
-$(".select-bar").css("width", "0px");
+$(".select-bar").css("width", "3px");
 
 
 
@@ -15,9 +15,13 @@ let navItemList = $(".nav-item");
 navItemList.hover(function() {
     $(this).children(".nav-text").css("color", "#e74c3c");//red text when hovered
 
-    $(this).children(".select-bar").animate({ //animate selection bar
+    /*$(this).children(".select-bar").animate({ //animate selection bar
         width: "30%",
-        right: "30%"
+        //right: "30%"
+    }, "slow");*/
+
+    $(this).children(".select-bar").animate({
+        transform: scaleX(5)
     }, "slow");
 
 }, function() {
