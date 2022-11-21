@@ -36,6 +36,7 @@ window.onresize = function() {
         "font-size": "" + window.innerHeight/38 + "px", 
         "top": "25%"
     });
+    
 
     $(".nav-item").css({
         "transform-origin": "center center"
