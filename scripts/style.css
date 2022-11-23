@@ -1,8 +1,12 @@
+:root { /*vars*/
+    --select-bar-factor: 20;
+}
+
 body {
     background-color: #263a4d;
 }
 
-.nav-bar{
+.nav-bar{ /*entire bar*/
     display: flex;
     height: 8vh;
     flex-direction: row;
@@ -10,16 +14,15 @@ body {
     text-align:center;
 }
 
-.nav-item{
+.nav-item{ /*individual items*/
     width: 100%;
     background-color: #ecf0f1;
     margin: 0px;
-    text-align: center;
     transform-origin:center center;
     position: relative;
 }
 
-.nav-text {
+.nav-text { /* text in each individual item*/
     color: #848484;
     font: normal 100 0px "Roboto", sans-serif;
     text-align: center;
@@ -30,7 +33,8 @@ body {
     bottom: 75%;
 }
 
-#nav-start {
+
+#nav-start { /* rounded edges for navbar*/
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
 }
@@ -40,13 +44,20 @@ body {
     border-top-right-radius: 6px;
 }
 
-.select-bar {
+.select-bar { /*selection bar, base properties*/
     background-color: #e74c3c;
-    height: 4px;
-    width: 4px;
     position:absolute;
-    top: 96%;
+    width: 4px;
+    top: 93%;
     transform-origin:center center;
     left: 50%;
     right: 50%;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
 }
+
+.nav-item:hover .select-bar { /*scale select bar when hovered*/
+    visibility: visible;
+    transform: scaleX(var(--select-bar-factor));
+}
+
