@@ -20,6 +20,7 @@ body {
     margin: 0px;
     transform-origin:center center;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .nav-text { /* text in each individual item*/
@@ -61,3 +62,9 @@ body {
     transform: scaleX(var(--select-bar-factor));
 }
 
+.text-background {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+    background-color: #ecf0f1;
+}
