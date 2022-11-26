@@ -5,7 +5,7 @@ let navItemList = $(".nav-item");
 let selectBarWidth = "--select-bar-factor";
 
 //functions
-function redirectWindow(elemId) {
+function redirectWindow(elemId) { //takes ID of the nav-item clicked and redirects to the correct page
     switch(elemId) {
         case "nav-start":
             window.location.href = "index.html";
