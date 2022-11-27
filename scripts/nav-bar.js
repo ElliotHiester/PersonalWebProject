@@ -1,7 +1,6 @@
 console.log("nav-bar.js loaded");
 
 //vars
-let navItemList = $(".nav-item");
 let selectBarWidth = "--select-bar-factor";
 
 //functions
@@ -28,7 +27,7 @@ $(".nav-text").css("font-size", "" + window.innerHeight/38 + "px"); //initial te
 $(".select-bar").css("height", "" + window.innerHeight/400.5 + "px"); //initial select bar size
 
 //hover text color change
-navItemList.hover(function() {
+$(".nav-item").hover(function() {
     $(this).children(".nav-text").css("color", "#e74c3c");//red text when hovered
 }, function() {
     $(this).children(".nav-text").css("color", "#848484"); //grey text when not hovered
@@ -52,8 +51,8 @@ window.onresize = function() {
 //navbar buttons redirect window
 $(".nav-item").click(function() { redirectWindow(this.id) });
 
-
-
+console.log(window.innerHeight);
+console.log(window.innerWidth);
 
 
 
