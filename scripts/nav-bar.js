@@ -53,6 +53,3 @@ $(".nav-item").click(function() { redirectWindow(this.id) });
 
 console.log(window.innerHeight);
 console.log(window.innerWidth);
-
-
-
